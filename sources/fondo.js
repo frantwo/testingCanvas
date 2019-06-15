@@ -1,5 +1,5 @@
 class Fondo {
-    constructor(backgX, backgY, backgWidth, backHeight, pathImage) {
+    constructor(backgX, backgY, backgWidth, backHeight) {
         this.canvasDOMEl = undefined;
         /** @type CanvasRenderingContext2D */
         this.ctx = undefined;
@@ -8,7 +8,8 @@ class Fondo {
         this.backgWidth = backgWidth;
         this.backHeight = backHeight;
         this.backgroundPos = 0;
-        this.pathImage = pathImage;
+        //OJOOO!!! PREGUNTAR A LOS PROFES!!!! NO ENTIENDO PQ ASÍ FUNCIONA Y SI LO CAMBIO A '../images..' NO FUNCIONA
+        this.pathImage = "./images/fondo.png";
         this.Backgrounds = [{
                 imagen: new Image(),
                 x: 0,
